@@ -1,0 +1,270 @@
+﻿<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+	<dd:Name xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">StoredProcedure.rdlx</dd:Name>
+	<Body>
+		<Height>11in</Height>
+		<ReportItems>
+			<FixedPage Name="FixedPage1">
+				<Pages>
+					<Page>
+						<ReportItems>
+							<Table Name="Table1">
+								<DataSetName>SalesDataForStore</DataSetName>
+								<Header>
+									<RepeatOnNewPage>true</RepeatOnNewPage>
+									<TableRows>
+										<TableRow>
+											<Height>0.25in</Height>
+											<TableCells>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox1">
+															<Value>Store ID</Value>
+															<Style>
+																<FontWeight>700</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Left</TextAlign>
+															</Style>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox2">
+															<Value>Units Sold</Value>
+															<Style>
+																<FontWeight>700</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Left</TextAlign>
+															</Style>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox3">
+															<Value>Net Sales</Value>
+															<Style>
+																<FontWeight>700</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Left</TextAlign>
+															</Style>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+											</TableCells>
+										</TableRow>
+									</TableRows>
+								</Header>
+								<Details>
+									<TableRows>
+										<TableRow>
+											<Height>0.25in</Height>
+											<TableCells>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox4">
+															<Value>=Fields!StoreID.Value</Value>
+															<Style>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Left</TextAlign>
+															</Style>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox5">
+															<Value>=Fields!UnitsSold.Value</Value>
+															<Style>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Left</TextAlign>
+															</Style>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox6">
+															<Value>=Fields!NetSales.Value</Value>
+															<Style>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Left</TextAlign>
+															</Style>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+											</TableCells>
+										</TableRow>
+									</TableRows>
+								</Details>
+								<Footer>
+									<TableRows>
+										<TableRow>
+											<Height>0.25in</Height>
+											<TableCells>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox7">
+															<Value />
+															<Style>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Left</TextAlign>
+															</Style>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox8">
+															<Value />
+															<Style>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Left</TextAlign>
+															</Style>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox9">
+															<Value />
+															<Style>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Left</TextAlign>
+															</Style>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+											</TableCells>
+										</TableRow>
+									</TableRows>
+								</Footer>
+								<Height>0.75in</Height>
+								<dd:RepeatToFill xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">true</dd:RepeatToFill>
+								<TableColumns>
+									<TableColumn>
+										<Width>2.818437in</Width>
+									</TableColumn>
+									<TableColumn>
+										<Width>1.940902in</Width>
+									</TableColumn>
+									<TableColumn>
+										<Width>1in</Width>
+									</TableColumn>
+								</TableColumns>
+								<Top>0.5in</Top>
+								<Width>5.759339in</Width>
+								<ZIndex>1</ZIndex>
+							</Table>
+							<Textbox Name="TextBox10">
+								<Height>0.35in</Height>
+								<Value>Net Sales by Store</Value>
+								<Style>
+									<FontSize>14pt</FontSize>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Center</TextAlign>
+								</Style>
+								<Top>0.125in</Top>
+								<Width>6.5in</Width>
+								<ZIndex>2</ZIndex>
+							</Textbox>
+						</ReportItems>
+					</Page>
+				</Pages>
+				<DataSetName>SalesDataForStore</DataSetName>
+			</FixedPage>
+		</ReportItems>
+	</Body>
+	<BottomMargin>1in</BottomMargin>
+	<LeftMargin>1in</LeftMargin>
+	<PageHeight>11in</PageHeight>
+	<PageWidth>8.5in</PageWidth>
+	<RightMargin>1in</RightMargin>
+	<TopMargin>1in</TopMargin>
+	<Width>8.5in</Width>
+	<DataSources>
+		<DataSource Name="Reels">
+			<ConnectionProperties>
+				<ConnectString>provider=Microsoft.Jet.OLEDB.4.0;data source=C:\Users\evan.warren\Documents\AR14\ActiveReports14\StoredProcedure\Reels.mdb;</ConnectString>
+				<DataProvider>OLEDB</DataProvider>
+			</ConnectionProperties>
+		</DataSource>
+	</DataSources>
+	<DataSets>
+		<DataSet Name="SalesDataForStore">
+			<Fields>
+				<Field Name="StoreID">
+					<DataField>StoreID</DataField>
+				</Field>
+				<Field Name="EmployeeID">
+					<DataField>EmployeeID</DataField>
+				</Field>
+				<Field Name="PositionID">
+					<DataField>PositionID</DataField>
+				</Field>
+				<Field Name="EmployeeName">
+					<DataField>EmployeeName</DataField>
+				</Field>
+				<Field Name="NumSales">
+					<DataField>NumSales</DataField>
+				</Field>
+				<Field Name="SaleDate">
+					<DataField>SaleDate</DataField>
+				</Field>
+				<Field Name="SalesID">
+					<DataField>SalesID</DataField>
+				</Field>
+				<Field Name="UnitsSold">
+					<DataField>UnitsSold</DataField>
+				</Field>
+				<Field Name="GrossSales">
+					<DataField>GrossSales</DataField>
+				</Field>
+				<Field Name="NetSales">
+					<DataField>NetSales</DataField>
+				</Field>
+			</Fields>
+			<Query>
+				<CommandText>SalesDataForStore
+</CommandText>
+				<DataSourceName>Reels</DataSourceName>
+				<CommandType>StoredProcedure</CommandType>
+				<QueryParameters>
+					<QueryParameter Name="StoreID ">
+						<Value>1002</Value>
+					</QueryParameter>
+				</QueryParameters>
+			</Query>
+		</DataSet>
+	</DataSets>
+</Report>
